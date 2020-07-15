@@ -1,0 +1,21 @@
+@mixin header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+@mixin logo {
+  position: relative;
+  text-align: left;
+}
+
+@mixin logo-pseudo {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 40px;
+  height: 2px;
+  transform: rotate(90deg);
+  background-color: $dark-gray;
+}

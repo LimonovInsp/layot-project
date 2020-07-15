@@ -1,0 +1,57 @@
+@import "mixins";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #000;
+
+  &__content-left {
+    @include header-content;
+    margin-left: 30px;
+  }
+
+  &__logo,
+  &__logo-hebrew {
+    @include logo;
+  }
+
+  &__logo::after {
+    @include logo-pseudo;
+    right: -50%;
+  }
+
+  &__headline-big,
+  &__headline-big-hebrew {
+    color: $main-gray;
+    font-size: 42px;
+    font-weight: normal;
+  }
+
+  &__headline-small,
+  &__headline-small-hebrew {
+    color: #dd1920;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__paragraph,
+  &__paragraph-hebrew {
+    color: $dark-gray;
+    font-weight: bold;
+  }
+
+  &__content-right {
+    @include header-content;
+    margin-right: 30px;
+  }
+
+  &__logo-hebrew::before {
+    @include logo-pseudo;
+    left: -50%;
+  }
+
+  &__description-hebrew {
+    text-align: right;
+  }
+}
