@@ -1,2 +1,2 @@
 # Dev template
-[DEMO](https://limonovinsp.github.io/dev_template/)
+[DEMO](https://limonovInsp.github.io/layot-project/)
