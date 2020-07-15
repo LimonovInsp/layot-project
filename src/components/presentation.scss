@@ -14,7 +14,7 @@
   }
 
   &__headline {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 24px;
     margin-bottom: 10px;
   }
@@ -23,11 +23,13 @@
     font-weight: normal;
     font-size: 14px;
     margin-bottom: 10px;
+    color: #333;
   }
 
   &__note {
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: normal;
+    color: #333;
   }
 
   &__box {
